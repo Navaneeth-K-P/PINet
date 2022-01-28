@@ -15,11 +15,11 @@ class Parameters():
     x_size = 512
     y_size = 256
     resize_ratio = 8
-    grid_x = x_size/resize_ratio  #64
-    grid_y = y_size/resize_ratio  #32
+    grid_x = x_size//resize_ratio  #64
+    grid_y = y_size//resize_ratio  #32
     feature_size = 4
     regression_size = 110
-    mode = 3
+    mode = 2
     threshold_point = 0.81
     threshold_instance = 0.22
 

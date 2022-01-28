@@ -85,7 +85,8 @@ def Testing():
         cv2.destroyAllWindows()
 
     elif p.mode == 2: # check model with a picture
-        test_image = cv2.imread(p.test_root_url+"clips/0530/1492720840345996040_0/20.jpg")
+        img_path2=r'D:\DLive\PINet\dataset\Test_images\11A00150.jpg'
+        test_image = cv2.imread(img_path2)
         test_image = cv2.resize(test_image, (512,256))/255.0
         test_image = np.rollaxis(test_image, axis=2, start=0)
         _, _, ti = test(lane_agent, np.array([test_image]))
